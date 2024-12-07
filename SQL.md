@@ -59,7 +59,7 @@ Window functions operate on a set of rows related to the current row.
 ### Syntax
 ```sql
 function_name() OVER (
-  [PARTITION BY column]
+  [PARTITION BY column] -- fonctionne comme un group by
   [ORDER BY column ASC/DESC]
 )
 ```
